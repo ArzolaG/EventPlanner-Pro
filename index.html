@@ -5,22 +5,98 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./css/main.css" />
         <title>EventPlanner Pro</title>
     </head>
     <body>
-        <header></header>
+        <header>
+            <div class="header-container">
+                <div class="logo">EventPlanner Pro</div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Ticketing</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <section class="hero" id="hero">
+                <h1>Create Unforgettable Events with EventPlanner Pro’s Seamless Management!</h1>
+            </section>
+        </header>
 
         <main>
-            <section class="hero" id="hero">
-                <h1>EventPlanner Pro</h1>
+            <section class="about" id="about">
+                <div class="about-image">
+                    <img src="./assets/img/about.jpg" alt="About Us" />
+                </div>
+                <div class="bio">
+                    <h2>About Us</h2>
+                    <br />
+                    <p>
+                        EventPlanner Pro is a team of passionate event enthusiasts dedicated to simplifying the world of event management.
+                        With years of experience in organizing and planning a wide range of events, we understand the unique challenges
+                        faced by event organizers and planners.
+                    </p>
+                    <br />
+                    <p>
+                        Our mission is to empower event professionals with cutting-edge tools and seamless solutions. We believe that every
+                        event has the potential to be unforgettable, and that's why we've developed EventPlanner Pro—a comprehensive
+                        platform designed to streamline online registration, ticketing, attendee communication, and post-event analysis.
+                        Join us on the journey to create memorable and stress-free events. Discover the power of EventPlanner Pro and take
+                        your event planning to the next level!
+                    </p>
+                </div>
+            </section>
+
+            <section class="ticketing">
+                <h2>Ticketing</h2>
+            </section>
+
+            <section class="register">
+                <h2>Register Online</h2>
+            </section>
+
+            <section class="contact">
+                <h2>Contact Us</h2>
             </section>
         </main>
 
-        <footer></footer>
+        <footer>
+            <div class="footer-container">
+                <div class="logo">
+                    <h3>EventPlanner Pro</h3>
+                </div>
+                <nav>
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Ticketing</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Legals</h3>
+                    <ul>
+                        <li><a href="#about">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+                <div class="social-media">
+                    <h3>Social Media</h3>
+                </div>
+                <div class="newsletter">
+                    <h3>Suscribe to Our Newsletter</h3>
+                    <form action="#">
+                        <input type="email" name="email" id="email" placeholder="Type your email" />
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
