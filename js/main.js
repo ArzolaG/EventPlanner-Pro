@@ -75,6 +75,9 @@ const mobileMenu = () => {
     navItemsHandler.forEach((element) => {
         element.addEventListener("click", () => {
             document.getElementById("mobile-nav").classList.toggle("active");
+            document.getElementsByClassName("line")[0].classList.toggle("active");
+            document.getElementsByClassName("line")[1].classList.toggle("active");
+            document.getElementsByClassName("line")[2].classList.toggle("active");
         });
     });
 
