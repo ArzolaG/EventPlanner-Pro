@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page / Main Page -->
+    <url>
+        <loc>https://65133c7e0c98940d63da5291--dreamy-lolly-c98168.netlify.app/</loc>
+        <lastmod>2023-09-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://65133c7e0c98940d63da5291--dreamy-lolly-c98168.netlify.app/#about</loc>
+        <lastmod>2023-09-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://65133c7e0c98940d63da5291--dreamy-lolly-c98168.netlify.app/#ticketing</loc>
+        <lastmod>2023-09-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://65133c7e0c98940d63da5291--dreamy-lolly-c98168.netlify.app/#register</loc>
+        <lastmod>2023-09-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://65133c7e0c98940d63da5291--dreamy-lolly-c98168.netlify.app/#contact</loc>
+        <lastmod>2023-09-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
