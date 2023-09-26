@@ -7,7 +7,8 @@
     scroll-behavior: smooth;
 }
 body {
-    background-color: #f7f1ff;
+    background-color: #eddeff;
+    /* background-color: #f7f1ff; */
     font-size: 18px;
 }
 
@@ -23,6 +24,11 @@ body {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 500;
+    transition: 0.3s background ease;
+}
+
+.button:hover {
+    background: #a26ee0;
 }
 
 header {
@@ -63,7 +69,7 @@ header nav ul li a {
 
 section {
     margin: auto;
-    padding: 5rem 0;
+    padding: 100px;
 }
 
 .hero {
@@ -75,7 +81,7 @@ section {
 }
 
 .hero h1 {
-    font-size: 60px;
+    font-size: 3.6rem;
     text-align: center;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
     color: #fff;
@@ -83,7 +89,6 @@ section {
 
 .about {
     /* width: 100%; */
-    max-width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -148,8 +153,7 @@ h2 {
 
 /* Ticketing Services */
 .ticketing {
-    background: #eddeff;
-    padding: 100px;
+    background: #f7f1ff;
 }
 .ticketing .headline {
     display: flex;
@@ -173,10 +177,16 @@ h2 {
     flex-direction: column;
     gap: 20px;
     background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
+    box-shadow: rgba(78, 40, 90, 0.3) 0px 0px 5px;
     border-radius: 10px;
     padding: 30px;
     font-size: 1rem;
+    transition: 0.3s box-shadow ease;
+    cursor: default;
+}
+
+.ticketing .services .service-box:hover {
+    box-shadow: rgba(78, 40, 90, 0.3) 0px 0px 15px;
 }
 
 .ticketing .service-box .text {
@@ -195,7 +205,7 @@ h2 {
 
 /* Gallery */
 .gallery {
-    padding: 100px;
+    background-color: #f7f1ff;
     text-align: center;
 }
 .gallery h2 {
@@ -234,41 +244,53 @@ h2 {
 
 /* Register Section */
 .register {
-    padding: 100px;
+    width: 100%;
 }
 .register h2 {
     margin-bottom: 50px;
+    text-align: center;
 }
-.register .showcase {
+.register .showcase-container {
     width: 100%;
     display: flex;
     gap: 15px;
     flex-wrap: nowrap;
-    overflow-x: hidden;
-    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s all ease;
+}
+.register .slider {
+    width: 100%;
+    display: flex;
+}
+.register .showcase {
+    min-width: 100%;
+    display: flex;
+    gap: 15px;
 }
 .register .showcase-box {
-    min-width: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
+    /* min-width: 100%; */
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px; */
     padding: 40px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 .showcase-box .icon img {
     width: 50px;
 }
 .register .arrows {
-    float: right;
+    display: flex;
+    justify-content: end;
 }
 .register .arrows img {
     width: 80px;
     cursor: pointer;
 }
 .register .arrows .left-arrow {
-    opacity: 0;
+    opacity: 0.5;
 }
 
 /* Footer Styles */
@@ -340,4 +362,194 @@ form button {
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s background ease;
+}
+
+form button:hover {
+    background: #a26ee0;
+}
+
+.showcase-container-mobile {
+    display: none;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+}
+/* Responsive Styles */
+
+@media screen and (max-width: 1400px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bio {
+        text-align: center;
+        align-items: center;
+    }
+    .ticketing .services {
+        grid-template-columns: 1fr 1fr;
+    }
+    .register .showcase-container {
+        display: none;
+    }
+    .showcase-container-mobile {
+        display: flex;
+    }
+    .register .showcase-container-mobile .showcase {
+        /* min-width: 100%; */
+        min-width: 100%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    .register .showcase-container-mobile .showcase .showcase-box {
+        /* min-width: 100%; */
+        min-width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .contact {
+        padding: 50px 10%;
+        gap: 50px;
+    }
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .gallery .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "img1 img2"
+            "img3 img3"
+            "img4 img5";
+        grid-template-rows: repeat(3, 300px);
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    section.contact {
+        padding: 50px;
+    }
+    .hero {
+        padding: 0 50px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    body.fixed {
+        overflow-y: hidden;
+    }
+    header nav {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+    }
+    .mobile-menu ul {
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(140, 84, 209);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        width: 60%;
+        height: 100%;
+        padding: 100px;
+        position: absolute;
+        right: -60%;
+        top: 0;
+        transition: 0.3s all ease;
+    }
+    .mobile-menu ul.active {
+        right: 0;
+    }
+    .mobile-menu .menu-icon {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        z-index: 10;
+        cursor: pointer;
+    }
+    .mobile-menu .menu-icon .line {
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        border-radius: 3px;
+        margin: 5px 0;
+        transition: 0.2s all ease;
+        transform-origin: 1px;
+    }
+
+    .mobile-menu .menu-icon .line-middle.active {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    .mobile-menu .menu-icon .line-top.active {
+        transform: rotate(45deg);
+    }
+    .mobile-menu .menu-icon .line-bottom.active {
+        transform: rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ticketing .services {
+        grid-template-columns: 1fr;
+    }
+    .gallery .gallery-grid {
+        grid-template-rows: repeat(3, 150px);
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    section {
+        padding: 30px 20px;
+    }
+    section.contact {
+        padding: 30px 20px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+    .contact h2 .logo {
+        font-size: 2rem;
+    }
+    body {
+        font-size: 16px;
+    }
+    .ticketing .services {
+        gap: 20px;
+    }
 }
