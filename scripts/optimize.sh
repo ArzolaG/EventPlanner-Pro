@@ -35,7 +35,7 @@ minify_js() {
 
 # Main function
 main() {
-  # compress_images
+  compress_images
   minify_css
   minify_js
   echo "Website optimization completed."
